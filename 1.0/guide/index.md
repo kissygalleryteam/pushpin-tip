@@ -49,9 +49,15 @@ PushpinTip是一个图钉形式的提示层组件，提供了默认的主题，�
 ### 配置属性
 
 `closable` 是否显示关闭按钮
+
 `elcls` 提示层通用class
+
 `tips` 提示层数组
+
     **cls** 提示层独立class
+
     **node** 提示层定位节点
+
     **text** 提示文案
+    
     **offset** 提示层位置偏移
