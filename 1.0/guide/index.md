@@ -1,16 +1,16 @@
 ## 综述
 
-Gallery是。
+PushpinTip是一个图钉形式的提示层组件，提供了默认的主题，方便快速构建漂亮的提示层；
 
 * 版本：1.0
 * 作者：圆影
-* demo：[http://gallery.kissyui.com/gallery/1.0/demo/index.html](http://gallery.kissyui.com/gallery/1.0/demo/index.html)
+* demo：[http://gallery.kissyui.com/pushpin-tip/1.0/demo/index.html](http://gallery.kissyui.com/pushpin-tip/1.0/demo/index.html)
 
 ## 初始化组件
         
 #### 只使用核心功能
 
-    S.use('gallery/gallery/1.0/index', function (S, PushpinTip) {
+    S.use('gallery/pushpin-tip/1.0/index', function (S, PushpinTip) {
           new PushpinTip({
             closable: false,
             elcls: 'demo',
