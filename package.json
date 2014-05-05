@@ -1,5 +1,5 @@
 {
-    "name": "gallery",
+    "name": "pushpin-tip",
     "version": "1.0.0",
     "devDependencies": {
         "grunt-contrib-uglify": "~0.2.0",
