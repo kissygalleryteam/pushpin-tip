@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>不带关闭按钮的演示</title>
+    <script src="http://g.tbcdn.cn/kissy/k/1.4.1/seed-min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="http://g.tbcdn.cn/kissy/k/1.3.0/css/dpl/base-min.css">
+    <style>
+        .a{
+            margin: 100px auto;
+            width: 200px;
+            background: #eee;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h2>不带关闭按钮的演示</h2>
+
+<script>
+    var S = KISSY;
+    if (S.Config.debug) {
+        var srcPath = "../../";
+        S.config({
+            packages:[
+                {
+                    name:"gallery/pushpin-tip",
+                    path:srcPath,
+                    charset:"utf-8",
+                    ignorePackageNameInUri:true
+                }
+            ]
+        });
+    }
+
+    S.use('gallery/pushpin-tip/1.0/index,gallery/pushpin-tip/1.0/index.css', function (S, PushpinTip) {
+
+        var tip = new PushpinTip({
+            closable: false,
+            elcls: 'ks-pushpin demo',
+            tips: [
+                {
+                    cls: 'bottom',
+                    node: '#demo1',
+                    text: '下面的提示下面的提示',
+                    offset: [38,50]
+                }
+            ]
+        });
+
+        S.all('#close').on('click',function(){
+            tip.close('#demo1');
+        })
+    })
+</script>
+
+<div id="demo1" class="a">这是一个节点，<a href="javascript:{}" id="close">点这关闭</a></div>
+</body>
+</html>

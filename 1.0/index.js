@@ -18,6 +18,8 @@
 }
 
  **/
+
+
 KISSY.add(function (S, Node) {
     var $ = Node.all;
     var Config = {
@@ -56,14 +58,14 @@ KISSY.add(function (S, Node) {
                     cls: tip.cls,
                     text: tip.text
                 });
-                var t = tip.node[0].tip = $(html);
+                var pop = tip.node[0].tip= $(html);
                 if (self.cfg.closable) {
-                    self._bind(t);
+                    self._bind(pop);
                 } else{
-                    t.all('a').remove();
+                    pop.all('a').remove();
                 };
-                self._position(t,tip.node,tip.offset);
-                fragment.append(t);
+                self._position(pop,tip.node,tip.offset);
+                fragment.append(pop);
             });
             $('body').append(fragment);
         },
@@ -78,12 +80,14 @@ KISSY.add(function (S, Node) {
             tip.all('a').on('click',function(){
                 tip.remove();
             });
+        },
+        close: function(node){
+            if (!node) return;
+            var node = typeof node == 'string' ? $(node) : node;
+            node[0].tip && node[0].tip.remove();
         }
     });
 
     return PushpinTip;
 
 }, {requires:['node']});
-
-
-
