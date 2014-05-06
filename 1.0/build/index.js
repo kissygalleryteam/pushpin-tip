@@ -1,3 +1,9 @@
+/*
+combined files : 
+
+gallery/pushpin-tip/1.0/index
+
+*/
 /**
  * @fileoverview 
  * @author 圆影<yuanying.xh@alibaba-inc.com>
@@ -21,7 +27,7 @@
  **/
 
 
-KISSY.add(function (S, Node, Event) {
+KISSY.add('gallery/pushpin-tip/1.0/index',function (S, Node, Event) {
     var $ = Node.all;
     var Config = {
         closable: true,
