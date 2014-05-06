@@ -1,3 +1,3 @@
 config({
-    'gallery/gallery/index': {requires: ['node','base']}
+    'gallery/pushpin-tip/index': {requires: ['node','base']}
 });

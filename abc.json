@@ -1,14 +1,15 @@
 {
     "name": "pushpin-tip",
-    "comName":"Gallery",
+    "comName":"PushpinTip",
     "version": "1.0",
-    "desc": "",
+    "desc": "图钉形式的提示组件",
+    "cover":"http://gtms02.alicdn.com/tps/i2/T1TuHeFKpaXXbuvm_S-300-120.png",
     "tag":"图钉提示,kissy-mini",
     "githubName":"gafish",
     "author": {
         "name": "圆影",
-        "email": "yuanying.xh@alibaba-inc.com",
-        "page": ""
+        "email": "49321443@qq.com",
+        "page": "https://github.com/gafish/pushpin-tip"
     },
 	"flexComboPort":"8081",
 	"reserveServerPort":"8080",

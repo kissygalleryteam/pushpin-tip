@@ -1,3 +1,3 @@
 config({
-    'gallery/gallery/index': {alias: ['gallery/gallery/1.0/index']}
+    'gallery/pushpin-tip/index': {alias: ['gallery/pushpin-tip/1.0/index']}
 });
