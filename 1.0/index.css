@@ -7,6 +7,9 @@
     font-size: 14px;
     line-height: 1.5;
     overflow: hidden;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
 }
 .ks-pushpin.top .ks-pushpin-text{
     width: 102px;
@@ -15,10 +18,10 @@
     padding: 15px 10px 5px 10px;
 }
 .ks-pushpin.right .ks-pushpin-text{
-    width: 107px;
+    width: 117px;
     height: 61px;
     background: url('http://gtms02.alicdn.com/tps/i2/T1D.y6FTBbXXcDjjDe-157-91.png');
-    padding: 25px 10px 5px 40px;
+    padding: 25px 6px 5px 34px;
 }
 .ks-pushpin.bottom .ks-pushpin-text{
     width: 102px;
@@ -39,7 +42,7 @@
     width: 30px;
     height: 30px;
     background: url('http://gtms04.alicdn.com/tps/i4/T1hwO4FRBcXXbSBwfc-30-30.png') no-repeat;
-    text-indent: -999px;
+    text-indent: -9999px;
 }
 .ks-pushpin.top .ks-pushpin-close{
     top: -15px;
