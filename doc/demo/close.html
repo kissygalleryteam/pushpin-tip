@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>不带关闭按钮的演示</title>
+    <script src="http://g.tbcdn.cn/kissy/k/1.4.1/seed-min.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="http://g.tbcdn.cn/kissy/k/1.3.0/css/dpl/base-min.css">
+    <style>
+        .demo{
+            margin: 2.0.0px auto;
+            width: 200px;
+            background: #eee;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<h2>不带关闭按钮的演示</h2>
+
+<script>
+    var S = KISSY;
+    if (S.Config.debug) {
+        var srcPath = "../../";
+        S.config({
+            packages:[
+                {
+                    name:"kg/pushpin-tip",
+                    path:srcPath,
+                    charset:"utf-8",
+                    ignorePackageNameInUri:true
+                }
+            ]
+        });
+    }
+
+    S.use('kg/pushpin-tip/2.0.0/index,kg/pushpin-tip/2.0.0/index.css', function (S, PushpinTip) {
+
+        var tip = new PushpinTip({
+            closable: false,
+            elcls: 'ks-pushpin',
+            tips: [
+                {
+                    cls: 'bottom',
+                    node: '.demo1',
+                    text: '下面的提示下面的提示',
+                    offset: [38,50]
+                }
+            ]
+        });
+
+        S.all('#close').on('click',function(){
+            tip.close();
+        })
+
+        tip.on('close',function(ev){
+            alert('成功删除提示层')
+        })
+    })
+</script>
+
+<button id="close">点这关闭</button>
+<div class="demo1 demo">这是一个demo1节点</div>
+<div class="demo1 demo">这是一个demo1节点</div>
+</body>
+</html>
