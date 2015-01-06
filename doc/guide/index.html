@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>pushpin-tip</title>
+    <link rel="stylesheet" href="http://cdn.staticfile.org/twitter-bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://docs.kissyui.com/1.4/source/guideline/templates/assets/com-prettify.css">
+    <link rel="stylesheet" href="http://docs.kissyui.com/1.4/source/guideline/templates/assets/com.css">
+    <script src="http://cdn.staticfile.org/jquery/2.1.1-rc2/jquery.min.js"></script>
+    <script src="http://cdn.staticfile.org/twitter-bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script src="http://cdn.staticfile.org/prettify/r298/prettify.min.js"></script>
+    <script src="http://g.tbcdn.cn/kissy/k/1.4.8/seed-min.js" data-config="{combine:true}"></script>
+  </head>
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+    <div id="header"><a href="http://docs.kissyui.com/" class="logo">kissy</a>
+      <nav><a href="http://docs.kissyui.com/1.4/docs/html/coms.html">优秀组件推荐</a></nav>
+    </div>
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span3 bs-docs-sidebar">
+          <ul data-spy="affix" data-offset-top="0" class="nav nav-list bs-docs-sidenav"></ul>
+        </div>
+        <div class="span9 bs-docs-content">
+          <h1 data-id="undefined" class="title">pushpin-tip</h1>
+          <p class="author-wrapper"><span>组件有问题？旺旺联系作者：</span><a href="https://github.com/gafish" target="_blank" data-name="圆影" class="author"><img src="https://avatars.githubusercontent.com/u/1989426?v=2&amp;s=60" alt="圆影"></a><span class="author-name">圆影</span>
+          </p>
+          <div class="common-link"><a href="../demo/index.html" target="_blank" class="demo">示例</a><a href="https://github.com/kissygalleryteam/pushpin-tip" target="_blank" class="source">源码</a></div>
+          <p class="com-info"><span class="info-label">View</span><span data-com="pushpin-tip" class="J_View">531</span></p>
+          <p class="com-info"><span class="info-label">所属分类</span><a href="http://kpm.taobao.net/list/弹出层&amp;提示">弹出层&amp;提示</a>
+          </p>
+          <p class="com-info"><span class="info-label">kissy版本</span><span>1.4.X</span>
+          </p><h2 id="-">综述</h2>
+<p>PushpinTip是一个图钉形式的提示层组件，提供了默认的主题，方便快速构建漂亮的提示层；</p>
+<ul>
+<li>版本：2.0.0</li>
+<li>作者：圆影</li>
+<li>demo：<a href="http://kg.kissyui.com/pushpin-tip/2.0.0/demo/index.html">http://kg.kissyui.com/pushpin-tip/2.0.0/demo/index.html</a></li>
+</ul>
+<h2 id="-">初始化组件</h2>
+<h4 id="-">只使用核心功能</h4>
+<pre><code>S.use(&#39;kg/pushpin-tip/2.0.0/index&#39;, function (S, PushpinTip) {
+      new PushpinTip({
+        closable: true,
+        scrollable: false,
+        elcls: &#39;demo&#39;,
+        tips: [
+            {
+                cls: &#39;top&#39;,
+                node: &#39;#demo&#39;,
+                text: &#39;上面的提示上面的提示&#39;,
+                offset: [-50,50]
+            }
+        ]
+      });
+})
+</code></pre><h4 id="-">使用默认主题</h4>
+<pre><code>S.use(&#39;kg/pushpin-tip/2.0.0/index,kg/pushpin-tip/2.0.0/index.css&#39;, function (S, PushpinTip) {
+      new PushpinTip({
+        closable: true,
+        scrollable: false,
+        elcls: &#39;demo&#39;,
+        tips: [
+            {
+                cls: &#39;top&#39;,
+                node: &#39;#demo&#39;,
+                text: &#39;上面的提示上面的提示&#39;,
+                offset: [-50,50]
+            }
+        ]
+      });
+})
+</code></pre><h2 id="api-">API说明</h2>
+<h3 id="-">配置属性</h3>
+<p><code>closable</code> 是否显示关闭按钮</p>
+<p><code>scrollable</code> 是否随目标滚动</p>
+<p><code>elcls</code> 提示层通用class</p>
+<p><code>tips</code> 提示层数组</p>
+<pre><code>`cls` 提示层独立class
+
+`node` 提示层定位节点
+
+`text` 提示文案
+
+`offset` 提示层位置偏移
+</code></pre><h3 id="-">方法</h3>
+<p><code>close()</code> 关闭所有提示层</p>
+
+          <div style="display:none;"><script type="text/javascript" src="http://tajs.qq.com/stats?sId=36378479" charset="UTF-8"></script></div>
+          <script src="http://docs.kissyui.com/1.4/source/guideline/templates/assets/com.js"></script>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
